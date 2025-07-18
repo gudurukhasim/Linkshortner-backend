@@ -27,7 +27,7 @@ public class ShortenerController {
     @PostMapping("/api/shorten")
     public ResponseEntity<?> shorten(@Valid @RequestBody UrlRequest request) {
         String code = service.shortenUrl(request.getOriginalUrl());
-        return ResponseEntity.ok("https://linkshortener-backend.koyeb.app/" + code); //"http://localhost:8081/"
+        return ResponseEntity.ok("https://glad-sibeal-khasim-c57c075f.koyeb.app/" + code); //"http://localhost:8081/"
     }
 
     @GetMapping("/{code}")
